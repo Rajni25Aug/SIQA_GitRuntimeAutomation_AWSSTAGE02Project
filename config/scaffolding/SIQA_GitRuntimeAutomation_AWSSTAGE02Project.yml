@@ -3,6 +3,7 @@ info:
   model: int-scaffold
 packages:
 - name: TPP_services_in_FCS
+  version: "1.0"
   gitServerName: SIQA_KVV_IBM
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
@@ -13,9 +14,25 @@ packages:
   gitUsername: Rajni25Aug
   gitBranch: main
 services:
+- serviceName: project.siqa_gitruntimeautomation_awsstage02.integrations:SIQA_E2E_Mon_Test
+  packages:
+  - name: SIQA_GitRuntimeAutomation_AWSSTAGE02Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
+    version: "1.0"
+- serviceName: pub.math:addInts
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
+- serviceName: pub.string:bytesToString
+  packages:
+  - name: WmPublic
+    version: 11.1.0.0.2070
 - serviceName: project.siqa_gitruntimeautomation_awsstage02.integrations:SIQA_ThirdPPEdgeFS
   packages:
   - name: SIQA_GitRuntimeAutomation_AWSSTAGE02Project
+    version: "1.0"
+  - name: TPP_services_in_FCS
     version: "1.0"
 - serviceName: Basics_1:ComplexFS
   packages:
@@ -26,10 +43,6 @@ services:
   - name: SIQA_OriginTest_OnPremAssets
     version: "1.0"
 - serviceName: pub.math:divideInts
-  packages:
-  - name: WmPublic
-    version: 11.1.0.0.2070
-- serviceName: pub.math:addInts
   packages:
   - name: WmPublic
     version: 11.1.0.0.2070
