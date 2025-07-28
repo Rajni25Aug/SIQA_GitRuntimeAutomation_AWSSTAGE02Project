@@ -2,15 +2,15 @@ version: "1.0"
 info:
   model: int-scaffold
 packages:
-- name: SIQA_GitRuntimeAutomation_AWSSTAGE02Project
-  gitServerName: kusi_AWSStage02
-  gitUrl: https://github.com/Rajni25Aug
-  gitUsername: Rajni25Aug
-  gitBranch: main
 - name: TPP_services_in_FCS
   gitServerName: SIQA_KVV_IBM
   gitUrl: https://github.com/Karthik-V-IBM-10
   gitUsername: Karthik-V-IBM-10
+  gitBranch: main
+- name: SIQA_GitRuntimeAutomation_AWSSTAGE02Project
+  gitServerName: kusi_AWSStage02
+  gitUrl: https://github.com/Rajni25Aug
+  gitUsername: Rajni25Aug
   gitBranch: main
 services:
 - serviceName: project.siqa_gitruntimeautomation_awsstage02.integrations:SIQA_ThirdPPEdgeFS
